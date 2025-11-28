@@ -11860,18 +11860,127 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #141414;
+}
+header .hme,
+header li:hover {
+  color: #ff4d4f;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
 .btn2 {
   color: #ffffff;
   background-color: #ff4d4f;
   cursor: pointer;
 }
 
-header {
+.img-main {
   background-image: url("../../../Public/images/assets/img/profile/profile-bg-5.webp");
-  height: 100vh;
   background-position: center;
-  color: #ffffff;
   background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.img-main span {
+  color: #ff4d4f;
+}
+.img-main .icons div {
+  background-color: rgba(23, 23, 23, 0.6588235294);
+  box-sizing: border-box;
+  transition: 0.3s;
+}
+.img-main .icons div i {
+  color: white;
+  font-size: 20px;
+}
+.img-main .icons div:hover {
+  background-color: #ff4d4f;
+  transform: translateY(-10px);
+}
+
+.img-main::before {
+  content: "";
+  background-color: #141414;
+  position: absolute;
+  right: 0;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+}
+
+.grandeparnet {
+  background-color: #141414;
+}
+.grandeparnet .child-1 {
+  color: #ff4d4f;
+}
+.grandeparnet .child-1 p span {
+  border: 2px solid #ff4d4f;
+  width: 40px;
+}
+.grandeparnet .child-1 .text-justify-custom {
+  text-align: justify;
+  width: 57%;
+}
+
+.clbtn {
+  background-color: #ff4d4f;
+  transition: 0.5s;
+}
+.clbtn:hover {
+  transform: translateY(-5px);
+}
+
+.clbtn2 {
+  background-color: rgba(255, 77, 80, 0.368627451);
+  color: #ff4d4f;
+}
+
+.card {
+  background-color: #1c1c1c;
+}
+.card .card-text {
+  font-size: 12px;
+  color: #ff4d4f;
+}
+.card img {
+  box-sizing: border-box;
+}
+
+.icons2 div {
+  background-color: #272727;
+  transition: 0.5s;
+}
+.icons2 div:hover {
+  background-color: #ff4d4f;
+  transform: translateY(-10px);
+}
+
+.text-uppercase {
+  width: fit-content;
+}
+
+.conatiner-text {
+  line-height: 2;
+}
+
+.child-card1 {
+  background-color: #1c1c1c;
+  width: calc(50% - 2vw);
+  column-gap: 10px;
+}
+.child-card1 i {
+  color: #ff4d4f;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,15 +1,138 @@
 
-
-.btn2{
-     color:$praimery-font-white;
-     background-color: $primary-btn-color;
-     cursor: pointer;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-header{
-    background-image:url("../../../Public/images/assets/img/profile/profile-bg-5.webp");
-    height: 100vh;
-    background-position: center;
+header {
+    background-color: $color-bk;
+
+    .hme,
+    li:hover {
+        color: $primary-btn-color;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+
+
+
+}
+
+.btn2 {
     color: $praimery-font-white;
-    background-size: cover;
+    background-color: $primary-btn-color;
+    cursor: pointer;
 }
+
+.img-main {
+    background-image: url("../../../Public/images/assets/img/profile/profile-bg-5.webp");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+
+    span {
+        color: $primary-btn-color;
+    }
+
+    .icons div {
+        background-color: $bg-icons;
+        box-sizing: border-box;
+        transition: 0.3s;
+
+        i {
+            color: white;
+            font-size: 20px;
+        }
+    }
+
+    .icons div:hover {
+        background-color: $primary-btn-color;
+        transform: translateY(-10px);
+    }
+}
+
+.img-main::before {
+    content: "";
+    background-color: $color-bk;
+    position: absolute;
+    right: 0;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+}
+
+.grandeparnet {
+    background-color: $color-bk;
+
+    .child-1 {
+        color: $primary-btn-color;
+
+        p span {
+            border: 2px solid $primary-btn-color;
+            width: 40px;
+        }
+
+        .text-justify-custom {
+            text-align: justify;
+            width: 57%;
+        }
+    }
+}
+
+.clbtn {
+    background-color: $primary-btn-color;
+    transition: 0.5s;
+
+    &:hover {
+        transform: translateY(-5px);
+    }
+
+}
+
+.clbtn2 {
+    background-color: $primary-btn-color-transparent;
+    color: $primary-btn-color;
+
+}
+
+.card {
+    background-color: $card-bg-color;
+
+    .card-text {
+        font-size: 12px;
+        color: $primary-btn-color;
+    }
+    img{
+        box-sizing: border-box;
+    }
+}
+
+.icons2 div {
+    background-color: #272727;
+    transition: 0.5s;
+
+    &:hover {
+        background-color: $primary-btn-color;
+        transform: translateY(-10px);
+    }
+}
+.text-uppercase{
+    width: fit-content;
+}
+.conatiner-text{
+    line-height: 2;
+}
+.child-card1{
+    background-color: $card-bg-color;
+    width: calc((100%/2) - 2vw);
+    column-gap: 10px;
+    
+    i{
+        color: $primary-btn-color;
+    }
+}
+
