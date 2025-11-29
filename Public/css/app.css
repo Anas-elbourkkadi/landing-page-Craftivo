@@ -11866,7 +11866,7 @@ textarea.form-control-lg {
 }
 
 header {
-  background-color: #141414;
+  background-color: rgba(20, 20, 20, 0.6784313725);
 }
 header .hme,
 header li:hover {
@@ -11879,6 +11879,7 @@ header li:hover {
   color: #ffffff;
   background-color: #ff4d4f;
   cursor: pointer;
+  width: fit-content;
 }
 
 .img-main {
@@ -11918,17 +11919,21 @@ header li:hover {
   opacity: 0.8;
 }
 
-.grandeparnet {
+.grandeparnet,
+.Resume {
   background-color: #141414;
 }
-.grandeparnet .child-1 {
+.grandeparnet .child-1,
+.Resume .child-1 {
   color: #ff4d4f;
 }
-.grandeparnet .child-1 p span {
+.grandeparnet .child-1 p span,
+.Resume .child-1 p span {
   border: 2px solid #ff4d4f;
   width: 40px;
 }
-.grandeparnet .child-1 .text-justify-custom {
+.grandeparnet .child-1 .text-justify-custom,
+.Resume .child-1 .text-justify-custom {
   text-align: justify;
   width: 57%;
 }
@@ -11948,6 +11953,7 @@ header li:hover {
 
 .card {
   background-color: #1c1c1c;
+  height: fit-content;
 }
 .card .card-text {
   font-size: 12px;
@@ -11978,9 +11984,27 @@ header li:hover {
   background-color: #1c1c1c;
   width: calc(50% - 2vw);
   column-gap: 10px;
+  border: solid 1px transparent;
+}
+.child-card1:hover {
+  border: solid 1px #ff4d4f;
 }
 .child-card1 i {
   color: #ff4d4f;
+}
+
+.progress {
+  background-color: #1c1c1c;
+  height: 10px;
+}
+
+.Resume span {
+  border-top: 1px solid #ff4d4f;
+  width: 40px;
+}
+.Resume .text---center {
+  width: 58%;
+  text-align: center;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -1,11 +1,10 @@
-
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 header {
-    background-color: $color-bk;
+    background-color: $header--bk;
 
     .hme,
     li:hover {
@@ -22,6 +21,7 @@ header {
     color: $praimery-font-white;
     background-color: $primary-btn-color;
     cursor: pointer;
+    width: fit-content;
 }
 
 .img-main {
@@ -65,7 +65,8 @@ header {
     opacity: 0.8;
 }
 
-.grandeparnet {
+.grandeparnet,
+.Resume {
     background-color: $color-bk;
 
     .child-1 {
@@ -101,12 +102,14 @@ header {
 
 .card {
     background-color: $card-bg-color;
+    height: fit-content;
 
     .card-text {
         font-size: 12px;
         color: $primary-btn-color;
     }
-    img{
+
+    img {
         box-sizing: border-box;
     }
 }
@@ -120,19 +123,42 @@ header {
         transform: translateY(-10px);
     }
 }
-.text-uppercase{
+
+.text-uppercase {
     width: fit-content;
 }
-.conatiner-text{
+
+.conatiner-text {
     line-height: 2;
 }
-.child-card1{
+
+.child-card1 {
     background-color: $card-bg-color;
     width: calc((100%/2) - 2vw);
     column-gap: 10px;
-    
-    i{
+    border: solid 1px transparent;
+
+    &:hover {
+        border: solid 1px $primary-btn-color;
+    }
+
+    i {
         color: $primary-btn-color;
     }
 }
 
+.progress {
+    background-color: $card-bg-color;
+    height: 10px;
+}
+
+.Resume {
+    span{
+        border-top:1px solid $primary-btn-color ;
+        width: 40px;
+    }
+    .text---center {
+        width: 58%;
+        text-align: center;
+    }
+}
