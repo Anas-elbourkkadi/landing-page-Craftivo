@@ -11948,17 +11948,17 @@ main .child-1 .text-justify-custom {
 }
 
 .card,
-.card1 {
+.card1, .info, .siderigth {
   background-color: #1c1c1c;
   height: fit-content;
 }
 .card .card-text,
-.card1 .card-text {
+.card1 .card-text, .info .card-text, .siderigth .card-text {
   font-size: 12px;
   color: #ff4d4f;
 }
 .card img,
-.card1 img {
+.card1 img, .info img, .siderigth img {
   box-sizing: border-box;
 }
 
@@ -11998,12 +11998,12 @@ main .child-1 .text-justify-custom {
 }
 
 .Resume span,
-.Services span, .Portfolio span {
+.Services span, .Portfolio span, .contact span {
   border-top: 1px solid #ff4d4f;
   width: 40px;
 }
 .Resume .text---center,
-.Services .text---center, .Portfolio .text---center {
+.Services .text---center, .Portfolio .text---center, .contact .text---center {
   width: 58%;
   text-align: center;
 }
@@ -12063,6 +12063,15 @@ main .child-1 .text-justify-custom {
 }
 .the-box .btn-lg:hover, .the-box .btn-group-lg > .btn:hover {
   transform: translateY(-10px);
+}
+
+.togehter {
+  padding-block: 12px;
+  transition: 1s;
+}
+.togehter:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 5px 15px #ff4d4f;
 }
 
 /*# sourceMappingURL=app.css.map */

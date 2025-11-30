@@ -100,7 +100,7 @@ main {
 }
 
 .card,
-.card1 {
+.card1,.info,.siderigth {
     background-color: $card-bg-color;
     height: fit-content;
 
@@ -153,7 +153,7 @@ main {
 }
 
 .Resume,
-.Services,.Portfolio {
+.Services,.Portfolio,.contact {
     span {
         border-top: 1px solid $primary-btn-color ;
         width: 40px;
@@ -237,5 +237,13 @@ main {
     }
     .btn-lg:hover{
         transform: translateY(-10px);
+    }
+}
+.togehter{
+    padding-block:12px ;
+    transition: 1s;
+    &:hover{
+        transform: translateY(-2px);
+        box-shadow: 0px 5px 15px ($primary-btn-color);
     }
 }
