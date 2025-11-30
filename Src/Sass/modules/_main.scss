@@ -66,7 +66,8 @@ header {
 }
 
 .grandeparnet,
-.Resume {
+.Resume,
+.Services {
     background-color: $color-bk;
 
     .child-1 {
@@ -100,7 +101,8 @@ header {
 
 }
 
-.card {
+.card,
+.card1 {
     background-color: $card-bg-color;
     height: fit-content;
 
@@ -152,13 +154,73 @@ header {
     height: 10px;
 }
 
-.Resume {
-    span{
-        border-top:1px solid $primary-btn-color ;
+.Resume,
+.Services {
+    span {
+        border-top: 1px solid $primary-btn-color ;
         width: 40px;
     }
+
     .text---center {
         width: 58%;
         text-align: center;
     }
+}
+
+.card1 {
+    width: calc((100%/4) - 20px);
+    border: 2px solid transparent;
+    transition: 1s;
+    position: relative;
+
+    .headicon {
+        font-size: 40px;
+        transition: 1s;
+    }
+
+    .sentence {
+
+        i {
+            transition: 1s;
+        }
+    }
+
+
+
+
+    &:hover {
+        border: 2px solid $primary-btn-color;
+        transform: translateY(-10px);
+
+        .headicon {
+            transform: rotate(20deg);
+            color: $praimery-font-white;
+            background-color: $primary-btn-color;
+        }
+
+        .sentence {
+            color: $primary-btn-color;
+
+            i {
+                transform: translateX(10px);
+            }
+        }
+
+    }
+
+}
+
+.ticked {
+    position: absolute;
+    top: 15px;
+    right: -30px;
+    background: $primary-btn-color;
+    padding: 5px 35px;
+    font-size: 11px;
+    letter-spacing: 1px;
+    transform: rotate(45deg);
+}
+
+.spichel {
+    box-shadow: 0 10px 30px rgba(54, 144, 231, 0.15);
 }
