@@ -11919,25 +11919,17 @@ header li:hover {
   opacity: 0.8;
 }
 
-.grandeparnet,
-.Resume,
-.Services {
+main {
   background-color: #141414;
 }
-.grandeparnet .child-1,
-.Resume .child-1,
-.Services .child-1 {
+main .child-1 {
   color: #ff4d4f;
 }
-.grandeparnet .child-1 p span,
-.Resume .child-1 p span,
-.Services .child-1 p span {
+main .child-1 p span {
   border: 2px solid #ff4d4f;
   width: 40px;
 }
-.grandeparnet .child-1 .text-justify-custom,
-.Resume .child-1 .text-justify-custom,
-.Services .child-1 .text-justify-custom {
+main .child-1 .text-justify-custom {
   text-align: justify;
   width: 57%;
 }
@@ -12006,12 +11998,12 @@ header li:hover {
 }
 
 .Resume span,
-.Services span {
+.Services span, .Portfolio span {
   border-top: 1px solid #ff4d4f;
   width: 40px;
 }
 .Resume .text---center,
-.Services .text---center {
+.Services .text---center, .Portfolio .text---center {
   width: 58%;
   text-align: center;
 }
@@ -12058,6 +12050,19 @@ header li:hover {
 
 .spichel {
   box-shadow: 0 10px 30px rgba(54, 144, 231, 0.15);
+}
+
+.the-box {
+  background: linear-gradient(135deg, #ff4d4f, #667eea);
+}
+.the-box .partner,
+.the-box .btn-lg,
+.the-box .btn-group-lg > .btn {
+  font-size: 16px;
+  transition: 1s;
+}
+.the-box .btn-lg:hover, .the-box .btn-group-lg > .btn:hover {
+  transform: translateY(-10px);
 }
 
 /*# sourceMappingURL=app.css.map */
