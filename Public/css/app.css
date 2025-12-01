@@ -11936,6 +11936,7 @@ main .child-1 .text-justify-custom {
 
 .clbtn {
   background-color: #ff4d4f;
+  box-sizing: border-box;
   transition: 0.5s;
 }
 .clbtn:hover {
@@ -11948,17 +11949,26 @@ main .child-1 .text-justify-custom {
 }
 
 .card,
-.card1, .info, .siderigth {
+.card1,
+.info-card,
+.siderigth,
+.form-box {
   background-color: #1c1c1c;
   height: fit-content;
 }
 .card .card-text,
-.card1 .card-text, .info .card-text, .siderigth .card-text {
+.card1 .card-text,
+.info-card .card-text,
+.siderigth .card-text,
+.form-box .card-text {
   font-size: 12px;
   color: #ff4d4f;
 }
 .card img,
-.card1 img, .info img, .siderigth img {
+.card1 img,
+.info-card img,
+.siderigth img,
+.form-box img {
   box-sizing: border-box;
 }
 
@@ -11998,12 +12008,16 @@ main .child-1 .text-justify-custom {
 }
 
 .Resume span,
-.Services span, .Portfolio span, .contact span {
+.Services span,
+.Portfolio span,
+.contact span {
   border-top: 1px solid #ff4d4f;
   width: 40px;
 }
 .Resume .text---center,
-.Services .text---center, .Portfolio .text---center, .contact .text---center {
+.Services .text---center,
+.Portfolio .text---center,
+.contact .text---center {
   width: 58%;
   text-align: center;
 }
@@ -12072,6 +12086,34 @@ main .child-1 .text-justify-custom {
 .togehter:hover {
   transform: translateY(-2px);
   box-shadow: 0px 5px 15px #ff4d4f;
+}
+
+.form-box input,
+.form-box textarea {
+  background-color: #1c1c1c;
+  border: 2px solid #272727;
+  transition: 0.2s;
+}
+.form-box textarea {
+  height: 120px;
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid #ff4d4f;
+  outline: 2px solid rgba(255, 77, 80, 0.368627451);
+}
+
+.info-card {
+  border: 1px solid #272727;
+  transition: 1s;
+}
+.info-card p {
+  font-size: 13px;
+}
+.info-card:hover {
+  border: 1px solid #ff4d4f;
+  box-shadow: 0 10px 30px rgba(54, 144, 231, 0.15);
 }
 
 /*# sourceMappingURL=app.css.map */
