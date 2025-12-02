@@ -11919,17 +11919,21 @@ header li:hover {
   opacity: 0.8;
 }
 
-main {
+main,
+footer {
   background-color: #141414;
 }
-main .child-1 {
+main .child-1,
+footer .child-1 {
   color: #ff4d4f;
 }
-main .child-1 p span {
+main .child-1 p span,
+footer .child-1 p span {
   border: 2px solid #ff4d4f;
   width: 40px;
 }
-main .child-1 .text-justify-custom {
+main .child-1 .text-justify-custom,
+footer .child-1 .text-justify-custom {
   text-align: justify;
   width: 57%;
 }
@@ -12114,6 +12118,29 @@ textarea:focus {
 .info-card:hover {
   border: 1px solid #ff4d4f;
   box-shadow: 0 10px 30px rgba(54, 144, 231, 0.15);
+}
+
+footer li:hover {
+  color: #ff4d4f;
+  cursor: pointer;
+}
+footer .sentence2 {
+  font-size: 14px;
+}
+footer .containericon {
+  border: 1px solid #777777;
+}
+footer .containericon i {
+  color: #777777;
+}
+footer .containericon:hover {
+  border-color: #ff4d4f;
+}
+footer .containericon:hover i {
+  color: #ff4d4f;
+}
+footer .thelast-dance {
+  background-color: #1c1c1c;
 }
 
 /*# sourceMappingURL=app.css.map */
